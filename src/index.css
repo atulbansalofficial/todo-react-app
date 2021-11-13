@@ -1,6 +1,24 @@
-html{
+html {
   background: rgb(41, 48, 30);
 }
-.App{
+
+.App {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  background: transparent;
+  color: white;
+}
+
+input[type="text"]:focus {
+  background: transparent;
   color: white;
 }
