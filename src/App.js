@@ -21,7 +21,6 @@ class App extends Component {
     }
   };
   handleDelete = (id) => {
-  
     const olditems = [...this.state.items];
     console.log("olditems", olditems);
     const items = olditems.filter((element, i) => {
@@ -53,7 +52,7 @@ class App extends Component {
               </div>
             </div>
             <div>
-              <ul>
+              {/* <ul>
                 {this.state.items.map((value, i) => {
                   return (
                     <Plan
@@ -64,6 +63,9 @@ class App extends Component {
                     />
                   );
                 })}
+              </ul> */}
+              <ul>
+                <Plan p={this.state.items} sendDelete={this.handleDelete} />
               </ul>
             </div>
           </div>
